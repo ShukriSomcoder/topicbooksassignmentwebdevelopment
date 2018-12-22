@@ -1,0 +1,167 @@
+/*navigation using w3schools responsive navigation*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    padding-bottom:15px;
+
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #F05133;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: #8F2323;
+
+}
+.nav-item {
+    margin-right: 10px;
+    font-size: 15pt;
+    font-family: 'PT Serif', serif;
+
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+/*body, container and item using treehouse css flexbox course,  box shaddow using mdn https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow**/
+
+*{ box-sizing: border-box}
+
+body{
+
+    font-family: 'PT Serif', serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    background:#fff;
+}
+
+.container{
+    display:flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin:45px auto;
+
+}
+/*containers with different color backgrounds using a trial and error method some problems with the images going into du*/
+
+.intro {
+
+    background-color: #FFDE8D;
+}
+
+.second {
+    background-color: #F05133;
+
+}
+
+.third {
+
+    background-color: #fff;
+
+}
+.forth {
+    background-color: #A23200;}
+
+.fifth {
+
+    background-color: #fff;
+}
+.item{
+    color:bisque;
+    padding: 15px;
+    margin: 5px;
+
+    border-radius:3px;
+}
+
+/*navigation image and navlinks*/
+.logo{
+    float:left;
+}
+
+.navlinks{
+    float:right;
+}
+
+
+/* center aligning the flexbox from MDN https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container*/
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* creating css slider Javascript and Jquery interactive front-end web development book By John Duckett */
+
+.slide-viewer{
+    position: relative;
+    overflow:hidden;
+    height: 500px;
+}
+.slide-group{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.slide{
+    width:100%;
+    height: 100%;
+    display:none;
+    position:absolute;
+    text-align: center;
+}
+.slide:first-child{
+    display:block;
+}
+
+
+
+/*Media queries for the Navigation  from w3schools responsive navigation*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
