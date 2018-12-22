@@ -136,7 +136,9 @@ body{
     display: block;
 }
 
+/* creating a slider using keyframes*/
 
+@keyframes
 
 
 /*Media queries for the Navigation  from w3schools responsive navigation*/
@@ -161,6 +163,7 @@ body{
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
+        
     }
 }
